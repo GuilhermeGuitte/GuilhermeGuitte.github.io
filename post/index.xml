@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Guilherme Guitte</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://www.guitte.org/post/</link>
     <description>Recent content in Posts on Guilherme Guitte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Mon, 03 Aug 2015 07:53:25 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.guitte.org/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TDD in practice with PHPUnit</title>
-      <link>http://localhost:1313/tdd-in-practice-with-phpunit/</link>
+      <link>http://www.guitte.org/tdd-in-practice-with-phpunit/</link>
       <pubDate>Mon, 03 Aug 2015 07:53:25 -0300</pubDate>
       
-      <guid>http://localhost:1313/tdd-in-practice-with-phpunit/</guid>
+      <guid>http://www.guitte.org/tdd-in-practice-with-phpunit/</guid>
       <description>
 
 &lt;p&gt;TDD has become an essential practice for developers to have more confidence
