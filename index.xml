@@ -7,8 +7,131 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>All rights reserved - 2015</copyright>
-    <lastBuildDate>Thu, 06 Aug 2015 15:52:13 -0300</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2015 08:43:27 -0300</lastBuildDate>
     <atom:link href="http://www.guitte.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Applying SOLID principles</title>
+      <link>http://www.guitte.org/applying-solid-principles-pt-1/</link>
+      <pubDate>Fri, 07 Aug 2015 08:43:27 -0300</pubDate>
+      
+      <guid>http://www.guitte.org/applying-solid-principles-pt-1/</guid>
+      <description>
+
+&lt;p&gt;As a programmer, have you ever seen before classes (if they exists) with so much responsabilities, high coupled and other
+creepiest things? If you say:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;Yes, I&amp;rsquo;m suffering about that, please help me!&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For that SOLID was created!&lt;/p&gt;
+
+&lt;p&gt;In 2000&amp;rsquo;s, Michael Feathers introduces into development community the famous &lt;strong&gt;SOLID&lt;/strong&gt;, in which it aims to be principles to guide us in our code design process. Instead, design pattern are &lt;em&gt;Built-in blocks&lt;/em&gt;, &lt;em&gt;SOLID&lt;/em&gt; are just guidelines.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;But after all, what&amp;rsquo;s it SOLID?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;SOLID&lt;/em&gt; is an acronym for &lt;em&gt;(Single Responsibility, Open-closed, Liskov Substitution, Interface Segregation, Depedency Inversion)&lt;/em&gt;, that are 5 principles object-oriented design by &lt;em&gt;Uncle Bob&lt;/em&gt;, first let&amp;rsquo;s start with the &lt;em&gt;&amp;ldquo;S&amp;rdquo;&lt;/em&gt; of &lt;em&gt;SOLID&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;single-responsibility-srp:461a9cf8c5c84f94aab0e28557569f68&#34;&gt;Single Responsibility (SRP)&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;Single Responsibility Principles&lt;/em&gt; says:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A class should have one and only one reason to change.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;See the example below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+class MyController extends BaseController
+{
+
+    public function index()
+    {
+        $results = MyModel::where([&#39;foo&#39; =&amp;gt; 1]);
+
+        return View::make(&#39;my-view.index&#39;, compact(&#39;results&#39;));
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What are the responsabilities of my controller?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Build and perform a query into database.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This means that:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If I change the query, I have to move on my controller.&lt;/li&gt;
+&lt;li&gt;If I change the database source that I was consulting before, I have to move on my controller.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Soon, this code violates Simple Responsibility Principle.&lt;/p&gt;
+
+&lt;h2 id=&#34;smells:461a9cf8c5c84f94aab0e28557569f68&#34;&gt;Smells&lt;/h2&gt;
+
+&lt;p&gt;To be easy identify when your classes are breaking &lt;em&gt;SRP&lt;/em&gt;, you may wonder:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;What would be the responsibility of that class?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Stay tuned if you try to using any kind of connectors, for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;and&amp;rdquo;&lt;/em&gt;, &lt;em&gt;&amp;ldquo;but also&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a strong hint that your class are doing so much.&lt;/p&gt;
+
+&lt;h2 id=&#34;refactoring:461a9cf8c5c84f94aab0e28557569f68&#34;&gt;Refactoring&lt;/h2&gt;
+
+&lt;p&gt;One possible refactoring could be, extracting the database query from the controller using a repository pattern.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;src/MyController.php&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+...
+
+class MyController extends BaseController
+{
+    function __construct(Repository $repo) {
+        $this-&amp;gt;repo = $repo;
+    }
+
+    public function index()
+    {
+        $results = $this-&amp;gt;repo-&amp;gt;getAllFoo();
+
+        return View::make(&#39;my-view.index&#39;, compact(&#39;results&#39;));
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;src/Repository.php&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+class Repository
+{
+    public function getAllFoo()
+    {
+        return MyModel::where([&#39;foo&#39; =&amp;gt; 1]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;conclusion:461a9cf8c5c84f94aab0e28557569f68&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Honestly, simple apply the SRP you will fell an improvement in your application design. Clearly this is not the end,
+still exists the other 4 principles, however they are well co-related.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>4 laravel meetup</title>
