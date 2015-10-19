@@ -7,8 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>All rights reserved - 2015</copyright>
-    <lastBuildDate>Thu, 06 Aug 2015 15:52:13 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2015 21:05:08 -0200</lastBuildDate>
     <atom:link href="http://www.guitte.org/tags/presentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>6 laravel meetup</title>
+      <link>http://www.guitte.org/6-laravel-meetup-sp/</link>
+      <pubDate>Mon, 19 Oct 2015 21:05:08 -0200</pubDate>
+      
+      <guid>http://www.guitte.org/6-laravel-meetup-sp/</guid>
+      <description>
+
+&lt;p&gt;No último meetup, aproveitei para falar sobre um assunto que eu gosto muito, testes automatizados e o seu ecossistema.&lt;/p&gt;
+
+&lt;p&gt;Começar a incorporar testes no seu dia-a-dia é algo complicado no começo. Sempre senti que muitos tem dificuldade em entender conceitualmente e aplicar seja num framework ou sem framework.&lt;/p&gt;
+
+&lt;p&gt;Espero que vocês gostem do video:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/imrVCllu8Uk&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;slides:f58270b9ac049b5e1969ce100b942200&#34;&gt;Slides&lt;/h3&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;250a65f5068144d2859cf5b01ed1c832&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>4 laravel meetup</title>

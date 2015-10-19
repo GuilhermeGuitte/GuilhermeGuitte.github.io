@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tag2 on Guilherme Guitte</title>
-    <link>http://localhost:1313/tags/tag2/</link>
-    <description>Recent content in Tag2 on Guilherme Guitte</description>
+    <title>Rubyconf on Guilherme Guitte</title>
+    <link>http://www.guitte.org/tags/rubyconf/</link>
+    <description>Recent content in Rubyconf on Guilherme Guitte</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>All rights reserved - 2015</copyright>
     <lastBuildDate>Mon, 19 Oct 2015 21:08:12 -0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.guitte.org/tags/rubyconf/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Talk RubyConf Brazil: Melhore a busca textual do seu e-commerce</title>
-      <link>http://localhost:1313/talk-rubyconf-brasil-melhore-a-busca-textual-do-seu-e-commerce/</link>
+      <title>Talk RubyConf Brasil: Melhore a busca textual do seu e-commerce</title>
+      <link>http://www.guitte.org/talk-rubyconf-brasil-melhore-a-busca-textual-do-seu-e-commerce/</link>
       <pubDate>Mon, 19 Oct 2015 21:08:12 -0200</pubDate>
       
-      <guid>http://localhost:1313/talk-rubyconf-brasil-melhore-a-busca-textual-do-seu-e-commerce/</guid>
+      <guid>http://www.guitte.org/talk-rubyconf-brasil-melhore-a-busca-textual-do-seu-e-commerce/</guid>
       <description>&lt;p&gt;No dia 19 de setembro, estivemos na RubyConf Brasil à convite do Fábio Akita para palestrarmos. Palestrei sobre os desafios de implementar um motor de busca que se adequa-se a forma com que nosso cliente procura em nosso e-commerce.&lt;/p&gt;
 
 &lt;p&gt;Nossa experiência, foi que qualquer search engine tem suas limitações e há casos que você deve tratar qual a melhor busca a se executar dependendo do que o usuário procurar.&lt;/p&gt;
 
 &lt;p&gt;Confiram os meus slides =)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;www.speakerdeck.com/guilhermeguitte/melhore-a-busca-textual-do-seu-e-commerce&#34;&gt;slides&lt;/a&gt;&lt;/p&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;20a4a4315c1a41efbb344f85874a6790&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
 </description>
     </item>
     
