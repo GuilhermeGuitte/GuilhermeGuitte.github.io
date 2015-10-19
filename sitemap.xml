@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://www.guitte.org/</loc>
+    <lastmod>2015-10-19T21:08:12-02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.guitte.org/talk-rubyconf-brasil-melhore-a-busca-textual-do-seu-e-commerce/</loc>
+    <lastmod>2015-10-19T21:08:12-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.guitte.org/6-laravel-meetup-sp/</loc>
+    <lastmod>2015-10-19T21:05:08-02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.guitte.org/applying-solid-principles-pt-1/</loc>
+    <lastmod>2015-08-07T08:43:27-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.guitte.org/4-laravel-meetup-sp/</loc>
+    <lastmod>2015-08-06T15:52:13-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.guitte.org/tdd-in-practice-with-phpunit/</loc>
+    <lastmod>2015-08-03T07:53:25-03:00</lastmod>
+  </url>
+  
+</urlset>
