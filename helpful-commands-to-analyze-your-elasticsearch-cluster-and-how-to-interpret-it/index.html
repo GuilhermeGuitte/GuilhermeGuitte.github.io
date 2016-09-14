@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Helpful commands to analyze your elasticsearch cluster and How to interpret it. &middot;  Guilherme Guitte" />
+  	<meta property="og:site_name" content="Guilherme Guitte" />
+  	<meta property="og:url" content="http://www.guitte.org/helpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-08-15T20:26:27-03:00" />
+
+    
+    <meta property="og:article:tag" content="elasticsearch" />
+    
+    <meta property="og:article:tag" content="cluster" />
+    
+    <meta property="og:article:tag" content="monitoring" />
+    
+    
+
+  <title>
+     Helpful commands to analyze your elasticsearch cluster and How to interpret it. &middot;  Guilherme Guitte
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://www.guitte.org/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://www.guitte.org/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://www.guitte.org/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.guitte.org/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://www.guitte.org/index.xml" rel="alternate" type="application/rss+xml" title="Guilherme Guitte" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.15" />
+
+    <link rel="canonical" href="http://www.guitte.org/helpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53977349-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about/">About me</a>
+            </li>
+        
+            <h3>Follow me</h3>
+            <li class="nav-opened" role="presentation">
+            	<a href="https://github.com/GuilhermeGuitte">Github repos</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://twitter.com/GuilhermeGuitte">Twitter timeline</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://www.guitte.org/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Helpful commands to analyze your elasticsearch cluster and How to interpret it.</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-08-15T20:26:27-03:00">
+            Aug 15, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/elasticsearch/">#elasticsearch</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/cluster/">#cluster</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/monitoring/">#monitoring</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<p>Sometimes, you don&rsquo;t have access to GUI in your cluster for some reasons and surrendly you need to understand what&rsquo;s going on, why your cluster are not responding so fast.</p>
+
+<blockquote>
+<p>I recommend that you install <a href="https://www.elastic.co/products/marvel">Marvel</a> or other 3rd party <a href="https://qbox.io/blog/tools-for-monitoring-elasticsearch-performance">plugins</a>, but is important to understand the data over just use it.</p>
+</blockquote>
+
+<p>Elasticsearch, within your REST API, allows us to query the state of our cluster easily. It has two API:</p>
+
+<ul>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cat.html">Cat API</a></li>
+<li><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster.html">Cluster API</a></li>
+</ul>
+
+<h2 id="cat-api:6831845db9345603ea119d8109c441bf">Cat API</h2>
+
+<p>It&rsquo;s more well-formated output over Cluster API, (But doesn&rsquo;t have all features that cluster api has).</p>
+
+<p>In my opinion, the most important are:</p>
+
+<pre><code>  % curl 'localhost:9200/_cat/master?v&amp;h=ip,port,heapPercent,name'
+  id                     ip            port heapPercent node
+  QkFDT05hc2Rhc2Rhc2Rhc2 192.168.10.23 9300      43     Logan
+  YmF0YXRhZG9jZWJlbWxlZ2 192.168.10.24 9300      45     Spike
+</code></pre>
+
+<pre><code>  % curl 'localhost:9200/_cat/allocation?v'
+    shards diskUsed diskAvail diskRatio ip            node
+     1    7.3gb    80.2gb      8.3%     192.168.10.23 Jarella
+     1    7.2gb    80.3gb      8.2%     192.168.10.24 Solarr
+     1    7.3gb    80.3gb      8.3%     192.168.10.25 Adam II
+</code></pre>
+
+<p>count
+fielddata
+health</p>
+
+<p>node
+recovery</p>
+
+<p>Cluster
+health
+update settings
+nodes stats
+node info</p>
+
+<p>You can see more options, as fix</p>
+
+<p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration.html</a></p>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-troubleshoot-common-elk-stack-issues">https://www.digitalocean.com/community/tutorials/how-to-troubleshoot-common-elk-stack-issues</a></p>
+
+<p><a href="http://stackoverflow.com/questions/19963927/best-ways-to-diagnose-elasticsearch-issues">http://stackoverflow.com/questions/19963927/best-ways-to-diagnose-elasticsearch-issues</a></p>
+
+<p><a href="https://t37.net/how-to-fix-your-elasticsearch-cluster-stuck-in-initializing-shards-mode.html">https://t37.net/how-to-fix-your-elasticsearch-cluster-stuck-in-initializing-shards-mode.html</a></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://www.guitte.org/">Guilherme Guitte</a></h4>
+  
+  <p>Read <a href="http://www.guitte.org/">more posts</a> by this author.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">São Paulo, Brasil</span>
+    <span class="author-link icon-link"><a href="http://www.guitte.org">http://www.guitte.org</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Helpful%20commands%20to%20analyze%20your%20elasticsearch%20cluster%20and%20How%20to%20interpret%20it.&nbsp;-&nbsp;Guilherme%20Guitte&amp;url=http%3a%2f%2fwww.guitte.org%2fhelpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.guitte.org%2fhelpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.guitte.org%2fhelpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it%2f&amp;description=Helpful%20commands%20to%20analyze%20your%20elasticsearch%20cluster%20and%20How%20to%20interpret%20it."
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.guitte.org%2fhelpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'guitte-web-dev';
+  var disqus_url = 'http:\/\/www.guitte.org\/helpful-commands-to-analyze-your-elasticsearch-cluster-and-how-to-interpret-it\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Guilherme Guitte</a> All rights reserved - 2016</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://www.guitte.org/js/jquery.js"></script>
+    <script type="text/javascript" src="http://www.guitte.org/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://www.guitte.org/js/index.js"></script>
+    
+</body>
+</html>
+

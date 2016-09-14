@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   	<meta property="og:title" content=" TDD in practice with PHPUnit &middot;  Guilherme Guitte" />
   	<meta property="og:site_name" content="Guilherme Guitte" />
   	<meta property="og:url" content="http://www.guitte.org/tdd-in-practice-with-phpunit/" />
-    
+
     
   	<meta property="og:type" content="article" />
 
     <meta property="og:article:published_time" content="2015-08-03T07:53:25-03:00" />
 
+    
+    <meta property="og:article:tag" content="phpunit" />
+    
+    <meta property="og:article:tag" content="unit-testing" />
+    
+    <meta property="og:article:tag" content="php" />
+    
+    <meta property="og:article:tag" content="tdd" />
+    
+    <meta property="og:article:tag" content="testing" />
     
     
 
@@ -28,7 +38,7 @@
 
     <link rel="shortcut icon" href="http://www.guitte.org/images/favicon.ico">
 	  <link rel="apple-touch-icon" href="http://www.guitte.org/images/apple-touch-icon.png" />
-    
+
     <link rel="stylesheet" type="text/css" href="http://www.guitte.org/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="http://www.guitte.org/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
@@ -40,7 +50,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.14" />
+    <meta name="generator" content="Hugo 0.15" />
 
     <link rel="canonical" href="http://www.guitte.org/tdd-in-practice-with-phpunit/" />
 
@@ -55,6 +65,8 @@
       ga('send', 'pageview');
 
     </script>
+    
+
     
 </head>
 <body class="nav-closed">
@@ -96,6 +108,7 @@
 
 
 
+
 <header class="main-header post-head no-cover">
   <nav class="main-nav clearfix">
 
@@ -127,9 +140,19 @@
           </time>
         
          
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/phpunit/">#phpunit</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/unit-testing/">#unit-testing</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/php/">#php</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/tdd/">#tdd</a></span>
+         
+          <span class="post-tag small"><a href="http://www.guitte.org/tags/testing/">#testing</a></span>
+         
         </section>
     </header>
-  
+
     <section class="post-content">
       
 
@@ -637,51 +660,58 @@ learning tests, test something.</p>
 
 
     
-    <section class="share">
-      <h4>Share this post</h4>
-      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=TDD%20in%20practice%20with%20PHPUnit&amp;url=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
-          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-          <span class="hidden">Twitter</span>
-      </a>
-      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
-          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-          <span class="hidden">Facebook</span>
-      </a>
-      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
-         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-          <span class="hidden">Google+</span>
-      </a>
-    </section>
-    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=TDD%20in%20practice%20with%20PHPUnit&nbsp;-&nbsp;Guilherme%20Guitte&amp;url=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f&amp;description=TDD%20in%20practice%20with%20PHPUnit"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fwww.guitte.org%2ftdd-in-practice-with-phpunit%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
 
     
-    
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = 'guitte-web-dev';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'guitte-web-dev';
+  var disqus_url = 'http:\/\/www.guitte.org\/tdd-in-practice-with-phpunit\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 
   </footer>
 </article>
 
 </main>
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">Guilherme Guitte</a> All rights reserved - 2015</section>
+        <section class="copyright"><a href="">Guilherme Guitte</a> All rights reserved - 2016</section>
         
     </footer>
     </div>
     <script type="text/javascript" src="http://www.guitte.org/js/jquery.js"></script>
     <script type="text/javascript" src="http://www.guitte.org/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="http://www.guitte.org/js/index.js"></script>
-
+    
 </body>
 </html>
 
