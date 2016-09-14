@@ -7,8 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Fri, 02 Sep 2016 07:59:04 -0300</lastBuildDate>
+    <lastBuildDate>Wed, 14 Sep 2016 08:13:40 -0300</lastBuildDate>
     <atom:link href="http://www.guitte.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Unraveling Elasticsearch queries: How to create a intelligent search</title>
+      <link>http://www.guitte.org/unraveling-elasticsearch-queries-how-to-create-a-intelligent-search/</link>
+      <pubDate>Wed, 14 Sep 2016 08:13:40 -0300</pubDate>
+      
+      <guid>http://www.guitte.org/unraveling-elasticsearch-queries-how-to-create-a-intelligent-search/</guid>
+      <description>&lt;p&gt;I spoke at &lt;a href=&#34;https://twitter.com/laravelsp&#34;&gt;Laravel Meetup SP&lt;/a&gt; about how Elasticsearch queries works.
+I explained about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Structure search: How to use it.
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;bool&amp;rdquo; queries.&lt;/li&gt;
+&lt;li&gt;Caching.&lt;/li&gt;
+&lt;li&gt;Types of queries.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Full-text search:
+
+&lt;ul&gt;
+&lt;li&gt;Relevance&lt;/li&gt;
+&lt;li&gt;TF/IDF&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;match&amp;rdquo; query.&lt;/li&gt;
+&lt;li&gt;Analysis pipeline.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;fd221ac6f9554b2d9f295b61267c1195&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
     
     <item>
       <title>Organizing your e-commerce catalog with MongoDB - 7 masters (imasters)</title>
