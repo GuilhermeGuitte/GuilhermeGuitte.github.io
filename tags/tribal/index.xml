@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>agile on Hi! I&#39;m Guilherme</title>
-    <link>http://example.org/tags/agile/</link>
-    <description>Recent content in agile on Hi! I&#39;m Guilherme</description>
+    <title>tribal on Hi! I&#39;m Guilherme</title>
+    <link>http://example.org/tags/tribal/</link>
+    <description>Recent content in tribal on Hi! I&#39;m Guilherme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 09:19:29 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 09:19:29 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/agile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/tags/tribal/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>How to make sure my product is Fit for Purpose? A powerful framework explained.</title>
-      <link>http://example.org/articles/fit-for-purpose-explained/</link>
-      <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
-      
-      <guid>http://example.org/articles/fit-for-purpose-explained/</guid>
-      <description>Fit-for-purpose (F4P) framework was created by David Anderson and Alexei Zherglov, references on market about Kanban Method. Kanban comes as a way to manage services better. Evolutive approach. Now, F4P is how we can improve the purpose of our services in organization.
-  Links:
-https://www.fitterforpurpose.com/</description>
-    </item>
     
     <item>
       <title>[PODCAST] Comportamento Tribal: Great Boss, Dead Boss</title>

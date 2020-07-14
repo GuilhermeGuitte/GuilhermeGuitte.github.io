@@ -39,5 +39,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>kanban</title>
+      <link>http://example.org/tags/kanban/</link>
+      <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://example.org/tags/kanban/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tribal</title>
+      <link>http://example.org/tags/tribal/</link>
+      <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://example.org/tags/tribal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

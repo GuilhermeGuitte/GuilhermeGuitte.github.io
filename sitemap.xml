@@ -38,6 +38,21 @@
   </url>
   
   <url>
+    <loc>http://example.org/articles/comportamento-tribal-great-boss-dead-boss/</loc>
+    <lastmod>2020-05-16T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/kanban/</loc>
+    <lastmod>2020-05-16T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/tribal/</loc>
+    <lastmod>2020-05-16T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
   </url>
   
