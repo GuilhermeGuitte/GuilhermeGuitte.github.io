@@ -4,22 +4,41 @@
   
   <url>
     <loc>http://example.org/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/articles/flow-metrics/</loc>
+    <loc>http://example.org/tags/agile/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/articles/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://example.org/tags/f4p/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/articles/fit-for-purpose-explained/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/product-management/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/tags/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
   </url>
   
 </urlset>

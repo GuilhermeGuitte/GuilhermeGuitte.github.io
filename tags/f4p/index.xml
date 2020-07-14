@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Hi! I&#39;m Guilherme</title>
-    <link>http://example.org/articles/</link>
-    <description>Recent content in Articles on Hi! I&#39;m Guilherme</description>
+    <title>f4p on Hi! I&#39;m Guilherme</title>
+    <link>http://example.org/tags/f4p/</link>
+    <description>Recent content in f4p on Hi! I&#39;m Guilherme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
     <lastBuildDate>Sun, 14 Jun 2020 09:19:29 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/articles/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://example.org/tags/f4p/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
