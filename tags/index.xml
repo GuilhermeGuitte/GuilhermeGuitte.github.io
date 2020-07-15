@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hi! I&#39;m Guilherme</title>
-    <link>http://example.org/tags/</link>
+    <link>http://guitte.blog/tags/</link>
     <description>Recent content in Tags on Hi! I&#39;m Guilherme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
     <lastBuildDate>Sun, 14 Jun 2020 09:19:29 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://guitte.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>agile</title>
-      <link>http://example.org/tags/agile/</link>
+      <link>http://guitte.blog/tags/agile/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://example.org/tags/agile/</guid>
+      <guid>http://guitte.blog/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>f4p</title>
-      <link>http://example.org/tags/f4p/</link>
+      <link>http://guitte.blog/tags/f4p/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://example.org/tags/f4p/</guid>
+      <guid>http://guitte.blog/tags/f4p/</guid>
       <description></description>
     </item>
     
     <item>
       <title>product-management</title>
-      <link>http://example.org/tags/product-management/</link>
+      <link>http://guitte.blog/tags/product-management/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://example.org/tags/product-management/</guid>
+      <guid>http://guitte.blog/tags/product-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kanban</title>
-      <link>http://example.org/tags/kanban/</link>
+      <link>http://guitte.blog/tags/kanban/</link>
       <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://example.org/tags/kanban/</guid>
+      <guid>http://guitte.blog/tags/kanban/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tribal</title>
-      <link>http://example.org/tags/tribal/</link>
+      <link>http://guitte.blog/tags/tribal/</link>
       <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://example.org/tags/tribal/</guid>
+      <guid>http://guitte.blog/tags/tribal/</guid>
       <description></description>
     </item>
     
