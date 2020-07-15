@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Hello! I&#39;m Guilherme.</title>
+      <link>http://example.org/about/me/</link>
+      <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://example.org/about/me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How to make sure my product is Fit for Purpose? A powerful framework explained.</title>
       <link>http://example.org/articles/fit-for-purpose-explained/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>

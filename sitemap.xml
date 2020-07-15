@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/agile/</loc>
     <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
@@ -19,6 +24,11 @@
   
   <url>
     <loc>http://example.org/tags/f4p/</loc>
+    <lastmod>2020-06-14T09:19:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/me/</loc>
     <lastmod>2020-06-14T09:19:29-04:00</lastmod>
   </url>
   
