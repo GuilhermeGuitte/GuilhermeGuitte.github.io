@@ -7,15 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
-    <lastBuildDate>Fri, 31 Jul 2020 09:19:29 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 09:19:29 -0400</lastBuildDate>
     
 	<atom:link href="http://guitte.blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>[PODCAST] Segue o flow!</title>
+      <title>Segue o flow! Episódio 2 - A visão econômica</title>
       <link>http://guitte.blog/articles/segue-flow-episodio-1/</link>
-      <pubDate>Fri, 31 Jul 2020 09:19:29 -0400</pubDate>
+      <pubDate>Mon, 24 Aug 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://guitte.blog/articles/segue-flow-episodio-1/</guid>
+      <description>Segundo o Don Reinertsen, você pode esquecer da visão econômica que o seu fluxo tem, porém ela não vai te esquecer. #ficadica
+Esse é o segundo episódio. Espero que gostem!
+  </description>
+    </item>
+    
+    <item>
+      <title>Segue o flow! Episódio 1 - Introdução</title>
+      <link>http://guitte.blog/articles/segue-flow-episodio-1/</link>
+      <pubDate>Tue, 21 Jul 2020 09:19:29 -0400</pubDate>
       
       <guid>http://guitte.blog/articles/segue-flow-episodio-1/</guid>
       <description>Decidimos democratizar os conceitos do Principles of Product Development Flow para quem quer começar sua jornada em melhoria contínua do seu fluxo.
@@ -45,7 +56,7 @@ https://www.fitterforpurpose.com/</description>
     </item>
     
     <item>
-      <title>[PODCAST] Comportamento Tribal: Great Boss, Dead Boss</title>
+      <title>Comportamento Tribal: Great Boss, Dead Boss</title>
       <link>http://guitte.blog/articles/comportamento-tribal-great-boss-dead-boss/</link>
       <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
       
