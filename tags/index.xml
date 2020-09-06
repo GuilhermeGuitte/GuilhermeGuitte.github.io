@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hi! I&#39;m Guilherme</title>
-    <link>http://guitte.blog/tags/</link>
+    <link>https://guitte.blog/tags/</link>
     <description>Recent content in Tags on Hi! I&#39;m Guilherme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
     <lastBuildDate>Mon, 24 Aug 2020 09:19:29 -0400</lastBuildDate>
     
-	<atom:link href="http://guitte.blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://guitte.blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>flow</title>
-      <link>http://guitte.blog/tags/flow/</link>
+      <link>https://guitte.blog/tags/flow/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/flow/</guid>
+      <guid>https://guitte.blog/tags/flow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lean</title>
-      <link>http://guitte.blog/tags/lean/</link>
+      <link>https://guitte.blog/tags/lean/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/lean/</guid>
+      <guid>https://guitte.blog/tags/lean/</guid>
       <description></description>
     </item>
     
     <item>
       <title>podcast</title>
-      <link>http://guitte.blog/tags/podcast/</link>
+      <link>https://guitte.blog/tags/podcast/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/podcast/</guid>
+      <guid>https://guitte.blog/tags/podcast/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pt</title>
-      <link>http://guitte.blog/tags/pt/</link>
+      <link>https://guitte.blog/tags/pt/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/pt/</guid>
+      <guid>https://guitte.blog/tags/pt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>agile</title>
-      <link>http://guitte.blog/tags/agile/</link>
+      <link>https://guitte.blog/tags/agile/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/agile/</guid>
+      <guid>https://guitte.blog/tags/agile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>en</title>
-      <link>http://guitte.blog/tags/en/</link>
+      <link>https://guitte.blog/tags/en/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/en/</guid>
+      <guid>https://guitte.blog/tags/en/</guid>
       <description></description>
     </item>
     
     <item>
       <title>f4p</title>
-      <link>http://guitte.blog/tags/f4p/</link>
+      <link>https://guitte.blog/tags/f4p/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/f4p/</guid>
+      <guid>https://guitte.blog/tags/f4p/</guid>
       <description></description>
     </item>
     
     <item>
       <title>product-management</title>
-      <link>http://guitte.blog/tags/product-management/</link>
+      <link>https://guitte.blog/tags/product-management/</link>
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/product-management/</guid>
+      <guid>https://guitte.blog/tags/product-management/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kanban</title>
-      <link>http://guitte.blog/tags/kanban/</link>
+      <link>https://guitte.blog/tags/kanban/</link>
       <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/kanban/</guid>
+      <guid>https://guitte.blog/tags/kanban/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tribal</title>
-      <link>http://guitte.blog/tags/tribal/</link>
+      <link>https://guitte.blog/tags/tribal/</link>
       <pubDate>Sat, 16 May 2020 09:19:29 -0400</pubDate>
       
-      <guid>http://guitte.blog/tags/tribal/</guid>
+      <guid>https://guitte.blog/tags/tribal/</guid>
       <description></description>
     </item>
     
