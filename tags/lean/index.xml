@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lean on Hi! I&#39;m Guilherme</title>
+    <link>http://guitte.blog/tags/lean/</link>
+    <description>Recent content in lean on Hi! I&#39;m Guilherme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Guilherme Guitte © {year}</copyright>
+    <lastBuildDate>Fri, 31 Jul 2020 09:19:29 -0400</lastBuildDate>
+    
+	<atom:link href="http://guitte.blog/tags/lean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[PODCAST] Segue o flow!</title>
+      <link>http://guitte.blog/articles/segue-flow-episodio-1/</link>
+      <pubDate>Fri, 31 Jul 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://guitte.blog/articles/segue-flow-episodio-1/</guid>
+      <description>Decidimos democratizar os conceitos do Principles of Product Development Flow para quem quer começar sua jornada em melhoria contínua do seu fluxo.
+Esse é o primeiro episódio. Espero que gostem!
+  </description>
+    </item>
+    
+  </channel>
+</rss>

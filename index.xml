@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Guilherme Guitte © {year}</copyright>
-    <lastBuildDate>Sun, 14 Jun 2020 09:19:29 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 09:19:29 -0400</lastBuildDate>
     
 	<atom:link href="http://guitte.blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[PODCAST] Segue o flow!</title>
+      <link>http://guitte.blog/articles/segue-flow-episodio-1/</link>
+      <pubDate>Fri, 31 Jul 2020 09:19:29 -0400</pubDate>
+      
+      <guid>http://guitte.blog/articles/segue-flow-episodio-1/</guid>
+      <description>Decidimos democratizar os conceitos do Principles of Product Development Flow para quem quer começar sua jornada em melhoria contínua do seu fluxo.
+Esse é o primeiro episódio. Espero que gostem!
+  </description>
+    </item>
     
     <item>
       <title>Hello! I&#39;m Guilherme.</title>
@@ -18,7 +29,8 @@
       <pubDate>Sun, 14 Jun 2020 09:19:29 -0400</pubDate>
       
       <guid>http://guitte.blog/about/me/</guid>
-      <description></description>
+      <description>Developer since 2011, I consider myself as a continuous learner. I like to read new books, try new things, and travel around to shape my view of the world. I&amp;rsquo;ve been always curious about how digital is shaping our futures (I expect good) and how is my responsibility as a developer on it.
+In my earlier career, I had the experience to construct a SaaS platform. It was an application with a services built-in.</description>
     </item>
     
     <item>
